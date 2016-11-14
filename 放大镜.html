@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>放大镜</title>
+    <style>
+        * {margin: 0;  padding: 0  }
+
+        #demo {display: block; width: 400px; height: 255px; position: relative; border: 1px solid #ccc; margin-top:50px;}
+
+        #small-box {position: relative; z-index: 1;  }
+
+        #float-box {display: none; width: 160px; height: 120px; position: absolute; background: #ffffcc; border: 1px solid #ccc; filter: alpha(opacity=50); opacity: 0.5;  }
+
+        #mark {position: absolute; display: block; width: 400px; height: 255px; background-color: #fff; filter: alpha(opacity=0); opacity: 0; z-index: 10;  }
+
+        #big-box {display: none; position: absolute; top: 0; left: 460px; width: 400px; height: 300px; overflow: hidden;
+            border: 1px solid #ccc; z-index: 1;  }
+
+        #big-box img {position: absolute;  z-index:5 ; }
+
+    </style>
+    <script>
+        window.onload=function(){
+            var objDemo = document.getElementById("demo");
+            var objSmallBox = document.getElementById("small-box");
+            var objMark = document.getElementById("mark");
+            var objFloatBox = document.getElementById("float-box");
+            var objBigBox = document.getElementById("big-box");
+            var objBigBoxImage = objBigBox.getElementsByTagName("img")[0];
+
+            var scrollTop=document.documentElement.scrollTop||document.body.scrollTop; // 取滚动条高度
+
+            objMark.onmouseover=function(){
+                objFloatBox.style.display='block';
+                objBigBox.style.display='block';
+            };
+            objMark.onmouseout=function(){
+                objFloatBox.style.display='none';
+                objBigBox.style.display='none';
+            };
+            objMark.onmousemove=function(ev){
+                var _ev=ev||window.event;
+                var left=_ev.clientX-objDemo.offsetLeft-objSmallBox.offsetLeft-objFloatBox.offsetWidth/2; //放大镜偏移量
+                var top=_ev.clientY+scrollTop-objDemo.offsetTop-objSmallBox.offsetTop-objFloatBox.offsetHeight/2;
+
+                if (left < 0) {
+                    left = 0;
+                } else if (left > (objMark.offsetWidth - objFloatBox.offsetWidth)) {
+                    left = objMark.offsetWidth - objFloatBox.offsetWidth;
+                }
+
+                if (top < 0) {
+                    top = 0;
+                } else if (top > (objMark.offsetHeight - objFloatBox.offsetHeight)) {
+                    top = objMark.offsetHeight - objFloatBox.offsetHeight;
+
+                }
+
+                objFloatBox.style.left=left+'px';//放大镜的位置
+                objFloatBox.style.top=top+'px';
+
+            /*   var percentX = left / (objMark.offsetWidth - objFloatBox.offsetWidth);
+               var percentY = top / (objMark.offsetHeight - objFloatBox.offsetHeight);
+
+             //图片溢出的宽,高度
+              (objBigBoxImage.offsetWidth - objBigBox.offsetWidth) + "px";
+                (objBigBoxImage.offsetHeight - objBigBox.offsetHeight) + "px";*/  //
+
+               var percentX=left/(objMark.offsetWidth-objFloatBox.offsetWidth); //比率
+                var percentY=top/(objMark.offsetHeight-objFloatBox.offsetHeight);
+
+                objBigBoxImage.style.left=-percentX*(objBigBoxImage.offsetWidth - objBigBox.offsetWidth)+'px'; //大图片位移量
+                objBigBoxImage.style.top=-percentY*(objBigBoxImage.offsetHeight - objBigBox.offsetHeight)+'px';
+
+
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+<div id="demo">
+    <div id="small-box">
+        <div id="mark"></div>
+        <div id="float-box"></div>
+        <img src="images/macbook-small.jpg" alt="">
+    </div>
+    <div id="big-box">
+        <img src="images/macbook-big.jpg" alt="">
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function () {
+            var x=0;
+            var oImg=document.getElementById('img1');
+            var aImg=document.getElementsByTagName('img');
+            var oLastImg=oImg;
+            var i=0;
+            //创建多个img节点
+            for(i=1;i<77;i++){
+                var oNewImg=document.createElement('img');
+                oNewImg.src='images/miaov ('+i+').jpg';
+                oNewImg.style.display='none';
+                document.body.appendChild(oNewImg);
+            }
+
+            document.onmousedown=function (ev) {
+                var oEv=ev||window.event;
+                var disX=oEv.clientX-x;//记住鼠标当前的位置
+                document.onmousemove=function (ev) {
+                    var oEv=ev||window.event;
+                    x=oEv.clientX-disX;//鼠标移动的距离
+
+                    var l=parseInt(-x/10); //每10像素切换一张图片
+                    if (l>0){
+                        l=l%77;
+                    }else {
+                        l=l+-Math.floor(l/77)*77;
+                    }
+                    document.title=l;
+                    if (oLastImg!= aImg[l]){
+                        oLastImg.style.display='none';
+                        aImg[l].style.display='block';
+                        oLastImg= aImg[l]; //更新最后一张图片
+                    }
+
+                  //  oImg.src='images/miaov ('+l+').jpg';
+
+                };
+                document.onmouseup=function () {
+                    document.onmousemove= document.onmouseup=null;
+                };
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<img id="img1" src="images/miaov%20(0).jpg" alt="">
+</body>
+</html>

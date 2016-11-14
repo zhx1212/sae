@@ -1,0 +1,33 @@
+.header{background: none;min-height: 45px}
+.list{margin: 3em 0 2em;}
+.lists{width: 33.3%;float: left;position: relative;}
+.list a img{width: 100%;}
+.content{padding: 2em 0;}
+.zoom-icon {
+  position: absolute;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+  display: block;
+  left: 15px;
+  top: 0px;
+  width: 348px;
+  height: 227px;
+  background: rgba(101, 40, 64, 0.61)url(../images/zoom.png) center center no-repeat;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+.lists.zoom-icon {
+	top: -50px;
+	width: 100%;
+	height: 182px;
+}
+.lists a:hover .zoom-icon {
+	top: 14%;
+	opacity: 1;
+	filter: alpha(opacity=99); 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+}

@@ -1,0 +1,214 @@
+ @media(max-width:1440px) {
+    .slider{margin-top: 10em;text-align: center; position: relative;overflow: hidden;}
+    .slider-info h3{font-size: 7em;color: #652840;font-family: 'Sail-Regular'}
+    .slider-info p{font-size: 1.5em;font-weight: 400;color: #fff;width: 36%;line-height: 1.2em;margin: 0 auto;}
+  	.slider .slides li{width: 25%; float: left;margin: 0 auto;}
+  	.banner-grids{width: 25%;float: left;}
+  	.about-grid {float: left;width: 25%;}
+	  .side{float: left;position: relative;}
+    .team-info .team-grids{width: 25%;}
+}
+ @media (max-width: 1200px){
+ 	.slider .slides li{width:25%; float: left;margin: 0 auto;}
+ 	.picSlide{transform: translate(-940px)}
+  .col-lg-3 h4{font-weight: normal;font-size: 14px;}
+  .col-lg-3 p{font-size: 12px;}
+  .banner-grids{width: 25%;float: left;}
+  .about-grid {float: left;width: 25%;}
+	.side{float: left;position: relative;}
+  .textbox{text-align: center;left: 0;color: #fff;transform: translateY(-353px);width: 87%;height:100%;background: rgba(0,0,0,.3);transition: 1s;}
+  .textbox{position: absolute;top: 0px;left: 15px;border-radius: 2px;margin: 8em 0 0;overflow: hidden;vertical-align: middle;}
+  .textbox h4{font-size: 28px;font-family: 'Sail-Regular';padding-top: 2em;}
+  .textbox p{font-size: 14px;padding: 0px 20px;}
+  .side:hover .textbox{transform: translateY(-112px)}
+  .zoom-icon {width: 281px;height: 190px;}
+  .team-info .team-grids{width:25%;float: left;} 
+  .ser-list ul li a {font-size: 0.5em}
+ }
+  @media (max-width: 1000px){
+ 	.slider .slides li{width:25%; float: left;margin: 0 auto;}
+  .col-lg-3 h4{font-weight: normal;font-size: 14px;}
+  .col-lg-3 p{font-size: 12px;}
+  .banner-grids{width: 25%;float: left;}
+  .about-grid {float: left;width: 25%;}
+	.side{float: left;position: relative;}
+  .textbox{text-align: center;transform: translateY(-353px);left: 0;color: #fff;width: 87%;height:100%;background: rgba(0,0,0,.3);transition: 1s;}
+  .textbox {position: absolute;top: 0px;left: 15px;padding: 2.5em 0em 0;}
+  .side:hover .textbox{transform: translateY(-112px)}
+  .textbox h4{font-size: 28px;font-family: 'Sail-Regular';padding-top: 1em;}
+  .textbox p{font-size: 14px;padding: 0px 10px;}
+  .header-top {padding: 1.5em 0;}
+  .wedding{float: left;width: 33.3%;}
+  .zoom-icon {width: 281px;height: 190px;}
+  .team-info .team-grids{width: 25%;float: left;}
+  /* service */
+  .col-md-4 {
+    width: 33.33333333%;
+}
+.ser-list ul li a {
+    font-size: 0.965em;
+    padding: 6px 17px;
+}
+ }
+ 
+  @media (max-width: 992px){
+  .header {min-height: 440px;}
+  .slider{margin-top: 3em;text-align: center; position: relative;overflow: hidden;}
+  .slider-info h3{font-size: 4em;color: #652840;font-family: 'Sail-Regular'}
+  .slider-info p{font-size: 1em;font-weight: 400;color: #fff;width: 36%;line-height: 1.2em;margin: 0 auto;}
+ 	.slider .slides li{width: 25%; float: left;margin: 0 auto;}
+  .col-lg-3 h4{font-weight: normal;font-size: 14px;}
+  .col-lg-3 p{font-size: 12px;}
+  .banner-grids{width: 25%;float: left;}
+  .about-grid {float: left;width: 25%;}
+	.side{float: left;position: relative;}
+  .textbox{display: none;}
+  .wedding{float: left;width: 33.3%;}
+  .zoom-icon {width: 207px;height: 142px;}
+  .team-info .team-grids{width: 25%;float: left;}
+/* about */
+  .OurLove-grid {
+    float: left;
+    width: 40%;
+}
+.OurLove-grid1 {
+    float: left;
+    width: 60%;
+}
+.choose-grid {
+    float: left;
+    width: 33.3%;
+}
+/* contact */
+.contact_left {
+    float: left;
+    width: 60%;
+}
+.about-head p, .textbox p, .feature2 p, .wedding-inner p, .indicate-grid p, .OurLove-grid1 p, .captn p, .choose-grid p, .services p, .professional-grid1 p, .contact_left p, .company_ad p {
+    font-size: 0.95em;
+}
+/* service */
+.ser1 {
+    background: #652840;
+    padding: 1em;
+}
+.services-grid {
+    float: left;
+    width: 33.3%;
+}
+.ser-list {
+    width: 33.3%;
+    float: left;
+}
+.ser-list ul li a {
+    font-size: 0.9em;
+    padding: 6px 1px;
+}
+.professional-grid {
+    float: left;
+    width: 40%;
+}
+.professional-grid1 {
+    float: left;
+    width: 60%;
+}
+ }
+ @media (max-width: 768px){
+  /*slide*/
+  .slider{margin-top: 3em;text-align: center;overflow: hidden; position: relative;}
+	.slider-info h3{font-size: 5em;color: #652840;font-family: 'Sail-Regular'}
+	.slider-info p{font-size: 1em;font-weight: 400;color: #fff;width: 36%;line-height: 1.8em;margin: 0 auto;}
+  .slider .slides li{width: 25%; float: left;margin: 0 auto;}
+  .circle li {display: inline-block;width: 10px;height: 10px;border-radius: 50%;background:#fff;margin: 0 10px;}
+ 	.banner-grids{width: 25%;float: left;}
+ 	.about-grid {float: left;}
+	.side{float: left;position: relative;}
+  .textbox{display: none;}
+  .wedding{float: left;width: 33.3%;}
+ .zoom-icon {display: none;}
+ .team-info .team-grids{width: 25%;float: left;}
+ /* service */
+ .services-grid {
+    float: left;
+    width: 33.3%;
+}
+.ser-list {
+    width: 33.3%;
+    float: left;
+}
+.ser-list ul li a {font-size: 0.5em}
+}
+ @media (max-width: 640px){
+  .slider{margin-top: 3em;text-align: center;overflow: hidden; position: relative;}
+  .slider-info h3{font-size: 4em;color: #652840;font-family: 'Sail-Regular'}
+  .slider-info p{font-size: 1em;font-weight: 400;color: #fff;width: 36%;line-height: 1.2em;margin: 0 auto;}
+ 	.slider .slides li{width: 25%; float: left;margin: 0 auto;}
+  .col-lg-3 h4{font-weight: normal;font-size: 14px;}
+  .col-lg-3 p{font-size: 12px;}
+  .banner-grids{width: 25%;float: left;}
+  .about-grid {float: left;}
+	.side{float: left;position: relative;}
+  .textbox{display: none;}
+  .wedding{float: left;width: 33.3%;}
+  .zoom-icon {display: none;}
+  .team-info .team-grids{width: 50%;float: left;}
+  /* service */
+  .ser1 {
+    background: #652840;
+    padding: 0.55em;
+}
+.services-grid {
+    float: left;
+    width: 33.3%;
+}
+.hot-offer h3, .features h3, .wedding-news h3, .team h3, .why-choose h3, .professional h3, .service-list h3, .contact_left h3, .company_ad h3 {
+    font-size: 2em;
+}
+.ser-list {
+    width: 100%;
+}
+.ser-list ul li a {font-size: 0.5em}
+.professional-grid {
+    width: 100%;
+}
+.professional-grid1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+ }
+ @media (max-width: 480px){
+  .slider{margin-top: 3em;text-align: center;overflow: hidden; position: relative;}
+  .slider-info h3{font-size: 4em;color: #652840;font-family: 'Sail-Regular'}
+  .slider-info p{font-size: 1em;font-weight: 400;color: #fff;width: 50%;line-height: 1.1em;margin: 0 auto;}
+  .slider .slides{width:400%;}
+ 	.slider .slides li{width: 25%; float: left;margin: 0 auto;}
+	.banner-grids{width: 50%;float: left;}
+  .about-grid {float: left;width: 100%;}
+  .textbox{display: none;}
+  .wedding{float: left;width:100%;}
+  .zoom-icon {display: none;}
+  .team-info .team-grids{width: 100%;}
+  /* service */
+  .ser1 {
+    background: #652840;
+    padding: 0.5em;}
+  .services-grid {
+    width: 100%;}
+    .services-grid:nth-child(2) {
+    margin-top: 1em;
+}
+.services-grid:nth-child(3) {
+    margin-top: 1em;
+}
+.services-grid:nth-child(4) {
+    margin-top: 1em;
+}
+.professional-grid img {
+    margin: 0 auto;
+}
+.professional-grid {
+    width: 100%;
+}
+.ser-list ul li a {font-size: 0.5em}
+ }

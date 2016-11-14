@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手风琴</title>
+    <style>
+
+        *{padding: 0;margin: 0;}
+        ul{list-style: none;}
+        a{text-decoration: none;}
+        .wrap{width: 938px;height: 128px;border: 1px solid #d3d3d3;}
+        .wrap li{width: 156px;height: 128px;float: left;overflow: hidden;}
+        .wrap li a{display: block;height: 128px;width: 156px; position: relative;overflow: hidden;}
+        .wrap img{position: absolute;bottom: 0;right: 0;height: 72px;width: 117px;}
+        .wrap .info{position: absolute;top: 0;left: 0;width: 136px;padding: 4px 10px;}
+        .wrap .info h3{font-size: 14px;font-weight: 700;}
+        .wrap .info p{color: #868686;font-size: 12px;height: 22px;line-height: 22px;overflow: hidden;}
+        .wrap .info .price{font-size: 14px;font-style: italic;color: #fa2a5d;height: 35px;}
+        .wrap .line{position: absolute;right: 0;width: 0;height: 128px;border: 1px dashed #cacaca;}
+        .wrap .mask{position: absolute;top: 0;left: 0;height: 128px;width: 156px;opacity: 0;background-color: #000;}
+        .wrap:hover .mask{opacity: 0.15;}
+
+        .wrap ul *{transition: all 0.1s linear;}
+        .wrap li.big, li.big a{width: 314px;}
+        .wrap li.big img{width: 195px;height: 120px;right: 0;bottom: 0;}
+        .wrap li.big .info{width: 290px;}
+        .wrap li.big .info p{width: 166px;font-size: 14px;}
+        .wrap li.big .info h3{font-size: 18px;}
+        .wrap li.big p .price{font-size: 16px;padding-top: 7px;}
+        .wrap li.big a:hover .mask{opacity: 0;}
+
+    </style>
+    <script src="js/auto.js"></script>
+</head>
+<body>
+<div class="wrap" id="subject">
+    <ul>
+        <li >
+            <a href="javascript:;">
+            <img src="images/a3.jpg" alt="">
+            <div class="info">
+                <h3 style="color: #3b7ae3">京东</h3>
+                <p>京东五周年</p>
+                <p class="price"><strong>1</strong><i>折起
+                  </i></p>
+            </div>
+            <i class="line"></i>
+            <i class="mask"></i>
+        </a>
+        </li>
+        <li class="big">
+            <a href="javascript:;">
+                 <img src="images/a3.jpg" alt="">
+            <div class="info">
+                <h3 style="color: #3b7ae3">京东</h3>
+                <p>京东五周年</p>
+                <p class="price"><strong>1</strong><i>折起
+                  </i></p>
+            </div>
+            <i class="line"></i>
+            <i class="mask"></i>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                 <img src="images/a3.jpg" alt="">
+            <div class="info">
+                <h3 style="color: #3b7ae3">京东</h3>
+                <p>京东五周年</p>
+                <p class="price"><strong>1</strong><i>折起
+                  </i></p>
+            </div>
+            <i class="line"></i>
+            <i class="mask"></i>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                 <img src="images/a3.jpg" alt="">
+            <div class="info">
+                <h3 style="color: #3b7ae3">京东</h3>
+                <p>京东五周年</p>
+                <p class="price"><strong>1</strong><i>折起
+                  </i></p>
+            </div>
+            <i class="line"></i>
+            <i class="mask"></i>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                 <img src="images/a3.jpg" alt="">
+            <div class="info">
+                <h3 style="color: #3b7ae3">京东</h3>
+                <p>京东五周年</p>
+                <p class="price"><strong>1</strong><i>折起
+                  </i></p>
+            </div>
+            <i class="mask"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+.header{background: none;min-height: 45px}
+.services {
+    padding: 4em 0;
+    text-align: center;
+}
+.services h2 {
+    font-size: 3.5em;
+    color: #652840;
+    font-family: 'Sail-Regular';
+    text-transform: capitalize;
+    text-align: center;
+}
+.services-grids {
+    margin-top: 3em;
+}
+.ser1 {
+    background: #652840;
+    padding: 2em;
+}
+.img-responsive{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+.services h4 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    margin: 0.6em 0 0.4em;
+    color: #fff;
+}
+.services p {
+    font-size: 1em;
+    color: #eee;
+    line-height: 1.8em;
+}
+.professional {
+    padding: 0em 0 4em;
+}
+.professional h3 {
+    font-size: 3.5em;
+    color: #652840;
+    font-family: 'Sail-Regular';
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.professional-grids {
+    margin-top: 3em;
+}
+.professional-grid1 h4 {
+    font-size: 1.5em;
+    text-transform: capitalize;
+    color: #bf9280;
+    text-align: left;
+}
+.professional-grid1 p {
+    font-size: 1em;
+    padding: .5em 0;
+    color: #999;
+    line-height: 2em;
+    text-align: left;
+}
+.service-list {
+    padding: 4em 0;
+    background-color: #bf9280;
+}
+.service-list h3 {
+    font-size: 3.5em;
+    color: #fff;
+    font-family: 'Sail-Regular';
+    text-transform: capitalize;
+    text-align: center;
+}
+ul li { text-align: left;}
+.ser-list ul li a {
+    color: #eee;
+    font-size: 1em;
+    padding: 6px 24px;
+    background: url(../images/list-arrow.png) no-repeat 0px 10px;
+    line-height: 2em;
+    text-decoration: none;
+    text-align: left;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Sail-Regular';
+    src:url(../fonts/Sail-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src:url(../fonts/OpenSans-Regular.ttf) format('truetype');
+}
+/*header*/
+h1,h2,h3,h4,h5,h6,p,ul,body,ol,li,input{  padding:0;  margin: 0;  }
+body{  font-family: 'OpenSans-Regular'  }
+ul,ol,li{list-style: none}
+a{text-decoration: none}
+
+.header {
+    background: url(../images/banner2.jpg)no-repeat 0px 0px;
+    background-size: cover;
+    min-height: 755px;
+    position: relative;
+}
+.header-top {
+    padding: 2em 0;
+	background-color: #652840;
+}
+.navbar-brand {
+    float: left;
+	margin-left: 0.8em;
+}
+.navbar-nav {
+  float: right;
+  margin: 0 ;
+}
+.top-menu ul li {
+    display: inline-block;
+    margin: 0.8em 1em;
+}
+.copyrights{
+	text-indent:-9999px;
+	height:0;
+	line-height:0;
+	font-size:0;
+	overflow:hidden;
+}
+.navbar-brand h1 a {
+    text-decoration: none;
+	color:#fff;
+	font-size: 1.0em;
+    font-family: 'Sail-Regular';
+    text-transform: capitalize;
+}
+.navbar-default .navbar-nav > li > a {color: #fff;font-size: 1.2em}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus { color: #fff;background-color: transparent;}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {color: #fff;background-color: #C49191;}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #222;
+    text-decoration: none;
+    background-color: #fff;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+}
+.navbar-brand {
+    float: left;
+    height: 0px;
+    padding: 0px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover,
+ .navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #652840;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 10px 20px;
+}
+.navbar-default {
+    border-color: #652840!important;
+    background-color: #652840;
+}
+.top-menu ul li a {
+    font-size: 1.1em;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+}
+span.menu {display: none;}
+
+/*slide*/
+.slider{margin-top: 8em;text-align: center; position: relative;overflow: hidden;}
+.slider-info h3{font-size: 5em;color: #652840;font-family: 'Sail-Regular'}
+.slider-info p{font-size: 1em;font-weight: 400;color: #fff;width: 36%;line-height: 1.8em;margin: 0 auto;}
+.slider .slides{width: 400%;margin: 0;padding: 0;  position: relative; z-index: 1;left: 0;overflow: hidden;}
+.slider .slides li{width: 25%; float: left;margin: 0 auto;}
+.slider .circle{padding-top: 3em;width: 50%;margin: 0 auto;}
+.circle li {display: inline-block;width: 15px;height: 15px;border-radius: 50%;background:#fff;margin: 0 10px;}
+.circle li:hover{background: yellow}
+.circle li.cSpan{background: #9660ff;}
+.button{margin-top: 2em;}
+.button a{background: #652840;padding: 5px 10px;display:inline-block;color: #fff;font-size: 12px;vertical-align: middle;}
+
+/*bottom*/
+.row{background: #bf9280;color: #fff;position: absolute;left: 0;bottom: 0;width: 100%;text-align: center;padding: 10px 0;margin: 0;}
+.col-lg-3{width: 25%;}
+.col-lg-3 h4{font-weight: normal;font-size: 18px;}
+.col-lg-3 p{font-size: 14px;}
+/*about*/
+.about{padding: 3em 0;} 
+.about-head {text-align: center;}
+.about-head h2{color: #652840;font-family: 'Sail-Regular';}
+.about-head p{font-size: 14px;min-height: 30px;}
+.about-grids{margin-top: 3em;position: relative;}
+.about-grid {float: left;width: 25%;}
+.side{float: left;position: relative;overflow: hidden;}
+.textbox{text-align: center;left: 0;color: #fff;transform: translateY(-410px);width: 90%;height:100%;background: rgba(0,0,0,.3);transition: 1s;}
+.textbox{position: absolute;top: 0px;left: 15px;border-radius: 2px;margin: 8em 0 0;overflow: hidden;vertical-align: middle;}
+.textbox h4{font-size: 28px;font-family: 'Sail-Regular';padding-top: 3em;}
+.textbox p{font-size: 14px;padding: 0px 10px;line-height: 20px;}
+.side:hover .textbox{transform: translateY(-112px)}
+.about-grid {margin-top: 1em;}
+/*hot-offer*/
+.hot-offer{background: #bf9280;padding:8.0em 0;color: #fff;text-align: center;}
+.hot-offer h4{font-size: 36px;font-family: 'Sail-Regular';}
+.hot-offer p{font-size: 24px;min-height: 40px;line-height: 40px;}
+.card{position: relative;width: 50%;height:50%;margin: 0 auto;border: 15px solid #fff;}
+.card img{width: 100%;}
+.sub{position: absolute;z-index: 1;width:50%;height: 100%;right: 0;top:0;}
+.sub img{width: 100%;height:100%;}
+
+/*feature*/
+.features{width: 100%;background: #eee;padding: 8em 0;}
+.container{text-align: center;}
+.container h2{font-size: 48px;font-family: 'Sail-Regular';color: #652840;}
+.feature1,.feature2{background: #fff;margin-top: 0.5em;text-align: center;padding: 1em;}
+.feature1 span{width: 92px;height: 92px;border-radius: 50%;background: #652840;text-align: center;border: 5px solid #fff;box-shadow:0 0 10px 0 rgba(0,0,0,.7)}
+.feature1 h4{height: 50px;line-height: 50px;font-size: 14px;}
+.feature1 .glyphicon{font-size: 30px;color: #fff;vertical-align: middle;}
+.feature2 p{color: #999;line-height: 26px;}
+
+/*wedding news*/
+.wedding-news{background: #fff;min-height:646px; }
+.wedding-news .container h2{font-size: 48px;font-family: 'Sail-Regular';color: #652840;padding-top: 2em;}
+.col-md-4 .top{padding-top: 1em;}
+.wedding-news .top h4{font-size: 15px;line-height: 26px;}
+.wedding-news .top span{font-size: 15px;line-height: 26px;}
+.wedding-news .top p{font-size: 14px;line-height: 26px;color: #999;}
+.bot{width:100%;margin-top: 1.5em;}
+.bot img{width: 100%;}
+.bot:hover img{transform:scale(1.2);}
+.wedding{margin: 1em 0 1em;}
+/**/
+.topBox{padding:4em 0;background: #bf9280;width: 100%;}
+.col-md-3 span{color: #fff;font-size: 24px;padding:1em 0;margin-right: 0.5em;}
+.col-md-3 p a{color: #fff;font-size: 14px;text-align: left;}
+
+/*footer*/
+.footer{width: 100%;}
+
+.footer .bottom{min-height: 74px;background: #652840;}
+.footer .bottom p{color: #fff;font-size: 12px;line-height: 74px;}
+
+
+
+
+
+
+
+
+
